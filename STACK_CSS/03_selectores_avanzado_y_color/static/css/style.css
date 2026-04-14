@@ -1,0 +1,90 @@
+* {
+    /* Selector comodín (Selecciona todos los elementos html) */
+    /* ouline: 1px solid crimson; */
+    /* Línea externa de 2px */
+    margin: 0;
+    /* Formatea espacios externos de elementos html */
+    padding: 0;
+    /* Formatea espacios internos de elementos html */
+    box-sizing: border-box;
+    /* Considera bordes dentro de tamaño de elementos */
+}
+
+body {
+    padding: 40px;
+}
+
+h1 {
+    color: rebeccapurple;
+}
+
+.green {
+    color: mediumseagreen;
+}
+
+#red {
+    color: tomato;
+}
+
+.quote p {
+    color: darkslategray;
+    font-style: italic;
+}
+
+.quote h4 {
+    color: rgb(76, 121, 90);
+    font-weight: bold;
+    /* Negrita */
+}
+
+.header>img {
+    /*  Solo afecta a los hijos directos (>) */
+    height: 100px;
+    /* Altura de imágen */
+}
+
+#container p {
+    /* Selección de parrafo dentro de contenedor (#) */
+    font-size: 16px;
+    /* Tamaño de letra */
+    background-color: #444;
+    /* Color de fondo */
+    color: white;
+    /* Color de letra */
+}
+
+#container p.highlight {
+    font-weight: bold;
+    color: gold;
+}
+
+input[type="text"] { /* Selección de elemtos a través de su propiedad [type="text"] */
+    border: 2px solid royalblue;
+    padding:3px;
+}
+form{
+    padding: 20px;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: rgb(11, 21, 158);
+    border: none; /* Quita los bordes por defecto */
+    padding:5px 10px;
+    cursor:pointer; /* Manito para realizar clik */
+}
+
+.color_nombre{
+    color:greenyellow;
+    background-color:red;
+}
+
+.color_rgb{
+    color:rgb(0, 0, 255);
+    background-color: rgb(218, 221, 14);
+}
+
+.color_hex{
+    color:#ff0000;
+    background-color: #01410f;
+}
