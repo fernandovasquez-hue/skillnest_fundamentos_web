@@ -1,0 +1,9 @@
+h1 {
+    color: rgb(19, 90, 29); /* Color de texto */
+    font-size: 50px; /* Tamaño de texto (px = Pixeles) */
+}
+
+p {
+    color: rgb(94, 11, 150);
+    font-size: 18;
+}
