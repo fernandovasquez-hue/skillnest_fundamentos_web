@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Contabiliza bordes*/
+}
+
+.enca {
+    width: 100%;
+    background-color: rgb(35, 126, 206);
+    padding: 10px;
+}
+
+.titulo1 {
+    text-align: center;
+    color: white;
+}
+
+.titulo{
+    color: blue;
+    margin-top: 15px;
+    font-style:italic;
+}
+
+.container {
+    outline: solid 1px;
+    margin: 0 auto;
+    width: 900px;
+    padding: 20px;
+}
+
+/*Tamaños ejemplos CSS*/
+.aceptar {
+    width: 100px;
+    height: 50px;
+}
+
+.caja1 {
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    background-color: gold;
+}
+
+.parra1{
+    font-size: 40px;
+}
+
+.link1{
+    font-size: 300%;
+}
