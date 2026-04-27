@@ -16,10 +16,10 @@
     color: white;
 }
 
-.titulo{
+.titulo {
     color: blue;
     margin-top: 15px;
-    font-style:italic;
+    font-style: italic;
 }
 
 .container {
@@ -42,10 +42,75 @@
     background-color: gold;
 }
 
-.parra1{
+.parra1 {
     font-size: 40px;
 }
 
-.link1{
+.link1 {
     font-size: 300%;
+}
+
+/* 
+Manejo del contenido con overflow: visible, hidden, scroll, auto
+*/
+div {
+    width: 200px;
+    height: 100px;
+}
+
+.example1 {
+    height: 100px;
+    width: 300px;
+    background-color: blue;
+}
+
+.example2 {
+    height: 100px;
+    width: 300px;
+    background-color: rgb(4, 63, 26);
+}
+
+.example3 {
+    height: 100px;
+    width: 300px;
+    background-color: rgb(67, 6, 85);
+}
+
+.hidden {
+    overflow: hidden;
+    /* Oculta los elemetos que sobresalen del contenedor */
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
+
+/* Fondos y colores */
+.banner {
+    height: 500px;
+    width: 100%;
+    background: red url(/STACK_CSS/06_tamanos/static/images/banner.png) no-repeat fixed center center;
+    background-size: 50%;
+}
+
+/* Bordes y estilos */
+.aceptar {
+    border: 2px dotted green;
+}
+
+.articulo {
+    border: 1px solid black;
+}
+
+/* Bordes redondeados */
+.botom_redondeado {
+    border-radius: 5px;
+}
+
+.caja_redondeada {
+    border-radius: 50%;
 }
