@@ -29,6 +29,10 @@
     padding: 20px;
 }
 
+.row {
+    padding: 30px;
+}
+
 /*Tamaños ejemplos CSS*/
 .aceptar {
     width: 100px;
@@ -95,22 +99,85 @@ div {
     width: 100%;
     background: red url(/STACK_CSS/06_tamanos/static/images/banner.png) no-repeat fixed center center;
     background-size: 50%;
+    /* Aunmenta el tamaño de la imágen dentro del contenedor */
 }
 
 /* Bordes y estilos */
-.aceptar {
-    border: 2px dotted green;
+.cancelar {
+    border: 2px dotted rgb(255, 0, 0);
+    /* dotted: línea segmentada ........ */
+    padding: 15px;
+    cursor: pointer;
 }
 
 .articulo {
-    border: 1px solid black;
+    border: 2px solid black;
+    /* solid: línea sólida */
+    width: 100px;
+    height: 50px;
 }
 
 /* Bordes redondeados */
-.botom_redondeado {
-    border-radius: 5px;
+.boton_redondeado {
+    padding: 10px 40px;
+    border-radius: 15px;
+    /* redondea esquinas */
+    cursor: pointer;
 }
 
 .caja_redondeada {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 10px 16px;
+    background-color: rgb(127, 129, 255);
+    font-weight: bold;
+    color: aliceblue;
     border-radius: 50%;
+    /* 50% de radius: círculo perfecto */
+}
+
+.cajitas {
+    width: 150px;
+    height: 40px;
+    outline: solid 1px blue;
+}
+
+.box1 {
+    background-color: aqua;
+    padding: 10px;
+    /* Padding aplicado en todos los lados */
+}
+
+.box2 {
+    background-color: burlywood;
+    padding-top: 0px;
+    /*Espacio interno: arriba*/
+    padding-right: 5px;
+    /*Espacio interno:derecha*/
+    padding-bottom: 0px;
+    /*Espacio interno: abajo*/
+    padding-left: 5px;
+    /*Espacio interno: izquierda*/
+    /*padding: 0px 5px 0px 5px; --> aplicado en todos los lados*/
+    /* padding: 0px 5px --> 0px del eje (Y) y 5px del eje (X) */
+}
+
+.box3 {
+    background-color: darkseagreen;
+    margin: 10px;
+    /*Margen externo: Separa elementos */
+}
+
+.box4 {
+    background-color: lightcoral;
+    margin: 0px 20px;
+    /* eje X modificado margin*/
+    padding: 5px 0px;
+    /* eje Y modificado con padding */
+}
+
+.box5{
+    float: left;
+    width: 50%;
 }
