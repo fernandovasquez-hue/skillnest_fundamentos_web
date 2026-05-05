@@ -1,0 +1,87 @@
+.contenedor {
+    text-align: center;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+/*---------------------------------------------------------*/
+/*-------------------------SITIO INDEX---------------------*/
+/*---------------------------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*---HEADER---*/
+.header{
+    background-color: rgb(73, 126, 97);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu{
+    margin-top: 10px;
+}
+
+.boton{
+    display: inline-block;
+    background-color: rgb(108, 151, 117);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: rgb(162, 197, 162);
+}
+/* MAIN */
+.contenedor_principal{
+    padding: 25px 50px;
+}
+.resaltado{
+    display: inline;
+    background-color: darkorange;
+    font-weight: bold;
+}
+.contenedor_tarjeta{
+    text-align: center;
+    padding: 20px;
+}
+.box{
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(17, 219, 94);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bloque{
+    display: block;
+    background-color: rgb(3, 29, 16);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+/* FOOTER */
+.footer{
+    background-color: rgb(23, 102, 40);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
