@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     background-color: #DAD7D7;
     padding: 40px 5%;
     font-family: sans-serif;
@@ -29,8 +29,8 @@
 }
 
 .sec {
-    background-color: #2C5DDD;
     display: inline-block;
+    background-color: #2C5DDD;
     width: 26%;
     height: 500px;
     padding: 40px 0px;
@@ -39,8 +39,8 @@
 }
 
 .boton {
-    background-color: #FEEE2F;
     display: inline-block;
+    background-color: #FEEE2F;
     border-radius: 25px;
     padding: 12px 0;
     width: 70%;
@@ -49,9 +49,8 @@
 }
 
 .sec1 {
-    background-color: #E32014;
     display: inline-block;
-    width: 69%px;
+    width: 69%;
     margin-left: 4%;
     font-size: 16px;
     vertical-align: top;
@@ -71,9 +70,8 @@
     width: 30%;
     margin: 0 1%;
 }
-
-.div {
-    background-color: #8E2486;
+.div{
+    background-color:purple;
     text-align: center;
     padding: 30px 0;
     margin-top: 20px;
@@ -81,19 +79,19 @@
     font-size: 16px;
 }
 
-.buton {
-    background-color: #F0EAEE;
-    color: #860089;
+.buton{
     display: inline-block;
+    background-color: #e0e0e0;
     border: none;
     border-radius: 25px;
+    color: purple;
     padding: 12px 40px;
     font-weight: bold;
 }
 
 .lineas{
-    margin-top: 20px;
-    padding-left: 30px;
+margin-top: 20px;
+padding-left: 30px;
 }
 
 .linea{
