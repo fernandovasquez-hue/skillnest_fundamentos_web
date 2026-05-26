@@ -64,6 +64,7 @@ body{
 .caja2{
 display: flex;
 flex-direction: column;
+padding: 20px;
 gap: 15px;
 flex: 1;
 }
@@ -98,7 +99,52 @@ flex: 1;
 
 .caja4{
     flex: 1;
+    margin: 20px;
 }
 .caja4 img{
     max-width: 500px; /* ancho máximo*/
+}
+.seccion{
+    text-align: center;
+}
+.caja_grande{
+    display: flex;
+    justify-content: space-around;
+}
+.caja5{
+padding: 20px;
+}
+.caja5 img{
+    max-width: 100px;
+}
+.sepa{
+    margin: 10px 0px;
+}
+.caja6{
+    background-color: #F5F8FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 15px 0px;
+}
+.texto{
+    margin: 20px 0px;
+}
+.mediano{
+    padding: 15px;
+    font-size:  16px;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+}
+.ca1{
+    padding: 20px;
+    justify-content: flex-start;
+    flex: 3;
+}
+.ca2{
+    padding: 20px;
+    flex: 2;
 }
