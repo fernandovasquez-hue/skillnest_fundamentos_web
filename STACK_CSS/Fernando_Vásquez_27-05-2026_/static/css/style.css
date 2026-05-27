@@ -1,0 +1,64 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+body{
+    background-color: rgb(216, 216, 216);
+}
+.padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    padding: 100px 30px;
+    margin: 20%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px grey;
+
+}
+.hijo1{
+    position: absolute;
+    top: -100px;
+    left: 300px;
+}
+.hijo1 img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 4px 12px grey;
+}
+.hijo2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1.4;
+}
+.texto{
+    color: rgb(77, 77, 77);
+font-weight: bold;
+}
+.grande{
+    font-size: 20px;
+}
+.enla{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0 10px;
+}
+.boton{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(7, 78, 209);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 200px;
+}
