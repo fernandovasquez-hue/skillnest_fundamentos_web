@@ -41,39 +41,44 @@
     background-color: #5e98f5;
     color: #ffffff;
 }
-.padre{
+.contenedor{
     display: flex;
+    padding: 50px;
 }
-.izquierda{
+.columna_izquierda{
     flex: 2;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    margin: 20px;
     box-shadow: 2px 4px 8px grey;
+    max-height: 400px;
 }
-.nieto1{
+.superior_tarjeta{
     background-color: #4c89fa;
     height: 100px;
     font-weight: bold;
 }
-.nieto img{
+.parte_descripcion img{
     position: absolute;
     top: 20px;
-    left: 370px;
+    left: 320px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 4px solid white;
 }
-.texto{
+.lugar{
     color: #494949;
 }
-.perfil{
+.editar_perfil{
     color: #4c89fa;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
-.nieto{
+.editar_perfil:hover{
+    transform: scale(1.1);
+}
+.parte_descripcion{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,6 +87,83 @@
     padding: 100px 0 20px 0;
     font-weight: bold;
 }
-.hijo1{
+.columna_derecha{
     flex: 1;
+    margin-left: 100px;
+}
+.solicitudes{
+    box-shadow: 1px 2px 8px grey;
+    border-radius: 6px;
+
+}
+.mini_titulo{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 35px;
+}
+.informacion{
+    transition: transform 0.3s ease;
+}
+.informacion:hover{
+    transform: scale(1.1);
+}
+.ver_mas{
+text-decoration: none;
+color: #5e98f5;
+border: 2px solid #5e98f5;
+border-radius: 6px;
+padding: 5px 10px;
+transition: transform 0.3s ease;
+}
+.eleccion{
+    transition: transform 0.3s ease;
+
+}
+.eleccion:hover{
+    transform: scale(1.1);
+}
+.perfiles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 10px;
+}
+.perfiles img{
+    width: 40px;
+    border-radius: 50%;
+}
+.contacto{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.botones{
+    display: flex;
+    justify-items: flex-end;
+    gap: 10px;
+    margin: 10px;
+}
+.conexiones{
+    box-shadow: 1px 2px 8px grey;
+    border-radius: 6px;
+    padding: 10px;
+}
+.mini_titulo_conexiones{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 90px;
+}
+.perfiles_amistades{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+.perfiles_amistades img{
+    width: 40px;
+    border-radius: 50%;
 }
