@@ -63,6 +63,19 @@ function accesoEvento(){
 // Además:
 // Si la temperatura supera los 35 grados, mostrar una alerta adicional:
 //  “Temperatura extrema”.
+function mostrarTemperatura(){
+    let temperatura = parseInt(prompt("Ingrese la temperatura:"))
+    if(temperatura < 10){
+        alert(`Hace frío`);
+    } else if(temperatura >= 10 && temperatura <= 24){
+        alert(`Temperatura agradable`);
+    } else if(temperatura >= 25){
+        alert(`Hace calor`);
+        if(temperatura > 35){
+            alert(`Temperatura extrema`);
+        }
+    }
+}
 
 // ✅ Ejercicio 4: Verificación de administrador
 // 📝 Enunciado
@@ -76,6 +89,17 @@ function accesoEvento(){
 // Si ambos son correctos → “Bienvenido administrador”
 // Si usuario es correcto pero contraseña incorrecta → “Contraseña incorrecta”
 // Si usuario no existe → “Usuario no encontrado”
+function verificacionAdministrador(){
+    let usuario = prompt("Ingrese su usuario: ")
+    let contrasena = prompt("Ingrese su contraseña: ")
+    if(usuario === "admin" && contrasena === "12345"){
+        alert("Bienvenido administrador");
+    } else if(usuario === "admin" && contrasena !== "12345"){
+        alert("Contraseña incorrecta");
+    } else {
+        alert("Usuario no encontrado");
+    }
+}
 
 // ✅ Ejercicio 5: Sistema de aprobación
 // 📝 Enunciado
@@ -92,3 +116,20 @@ function accesoEvento(){
 // Además:
 // Si alguna nota es menor a 2.0 mostrar:
 //  “Debe asistir a reforzamiento”.
+function sistemaAprobacion(){
+    let nombre = prompt("Ingrese su nombre: ")
+    let nota1 = parseFloat(prompt("Ingrese la nota 1: "))
+    let nota2 = parseFloat(prompt("Ingrese la nota 2: "))
+    let nota3 = parseFloat(prompt("Ingrese la nota 3: "))
+    let promedio = (nota1 + nota2 + nota3) / 3
+    if(promedio >= 6.0){
+        alert(` ${nombre} está aprobado con excelencia.`);
+    } else if(promedio >= 4.0 && promedio < 6.0){
+        alert(` ${nombre} está aprobado.`);
+    } else {
+        alert(` ${nombre} está reprobado.`);
+    }
+    if(nota1 < 2.0 || nota2 < 2.0 || nota3 < 2.0){
+        alert(` ${nombre} debe asistir a reforzamiento.`);
+    }
+}
