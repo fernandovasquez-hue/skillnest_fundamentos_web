@@ -72,10 +72,10 @@ function  calcularEnvio(){
 
 // Utilizar operadores lógicos para realizar las validaciones.
 
+function permisosBiblioteca(){
 let usuario = prompt(`Ingrese tipo de usuario:`)
 let cantidadLibros = parseInt(prompt(`Ingrese la cantidad de libros solicitados:`))
 let permiso = "";
-function permisosBiblioteca(){
     if(usuario == "Profesor"){
         if(cantidadLibros > 0 && cantidadLibros <= 20){
             permiso = (`Profesor la solicitud de llevar ${cantidadLibros} libros
@@ -95,8 +95,8 @@ function permisosBiblioteca(){
     }else{
         permiso = (`Ingrese un usuario que sea valido.`)
     }
-
 alert(permiso);
+
 }
 
 // # Ejercicio 3: Clasificación Deportiva
@@ -118,7 +118,36 @@ alert(permiso);
 // - Edad
 // - Categoría asignada
 
-// ---
+function  clasificacionDeportiva(){
+    let nombreParticipante = prompt(`Ingrese su nombre:`)
+    let edadParticipante = parseInt(prompt(`Ingrese su edad:`))
+    let aviso = ""
+    if(edadParticipante > 0 && edadParticipante <= 9){
+        aviso = `Participante: ${nombreParticipante}
+        \nEdad: ${edadParticipante}
+        \nUsted fue colocado en la categoria: Niño`
+    }else if(edadParticipante > 9 && edadParticipante <= 12){
+        aviso = `Participante: ${nombreParticipante}
+        \nEdad: ${edadParticipante}
+        \nUsted fue colocado en la categoria: Niño Mayor`
+    }else if(edadParticipante > 12 && edadParticipante <= 17){
+        aviso = `Participante: ${nombreParticipante}
+        \nEdad: ${edadParticipante}
+        \nUsted fue colocado en la categoria: Adolecente`
+    }else if(edadParticipante > 17 && edadParticipante <= 59){
+        aviso = `Participante: ${nombreParticipante}
+        \nEdad: ${edadParticipante}
+        \nUsted fue colocado en la categoria: Adulto`
+    }else if(edadParticipante > 59 && edadParticipante <= 120){
+        aviso = `Participante: ${nombreParticipante}
+        \nEdad: ${edadParticipante}
+        \nUsted fue colocado en la categoria: Adulto Mayor`
+    }else{
+        aviso = `Participante ${nombreParticipante} ingrese una edad que sea valida!!`
+    }
+
+    alert(aviso)
+}
 
 // # Ejercicio 4: Sistema de Bonificación
 
@@ -139,7 +168,33 @@ alert(permiso);
 // - Nivel de antigüedad
 // - Mensaje indicando si recibe o no bonificación.
 
-// ---
+function sistemaBonificacion(){
+    let nombreTrabajador = prompt(`Ingrese su nombre:`)
+    let anosTrabajo = parseInt(prompt(`Ingrese años de antigüedad:`))
+    let enunciado = ""
+    if(anosTrabajo >= 0 && anosTrabajo <= 1){
+        enunciado = `Empleado ${nombreTrabajador}
+        \nAños de antigüedad: ${anosTrabajo}
+        \nQuerer informarle que no recibira el bono`
+    }else if(anosTrabajo > 1 && anosTrabajo <= 4){
+        enunciado = `Empleado ${nombreTrabajador}
+        \nAños de antigüedad: ${anosTrabajo}
+        \nQuerer informarle que el bono que recibira es del 10% al 15%`
+    }else if(anosTrabajo > 4 && anosTrabajo <= 10){
+        enunciado = `Empleado ${nombreTrabajador}
+        \nAños de antigüedad: ${anosTrabajo}
+        \nQuerer informarle que el bono que recibira es del 20% al 25%`
+    }else if(anosTrabajo > 10 && anosTrabajo <= 60){
+        enunciado = `Empleado ${nombreTrabajador}
+        \nAños de antigüedad: ${anosTrabajo}
+        \nQuerer informarle que el bono que recibira es del 30% al 40%`
+    }else{
+        enunciado = `Empleado ${nombreTrabajador}
+        \nIngrese años de antigüedad que sean validos`
+    }
+
+    alert(enunciado)
+}
 
 // # Ejercicio 5: Evaluación de Velocidad
 
@@ -163,3 +218,33 @@ alert(permiso);
 // - Nombre del conductor
 // - Velocidad
 // - Clasificación obtenida
+function evaluacionVelocidad(){
+    let nombreConductor = prompt(`Ingrese nombre del conductor:`)
+    let velocidadRegristada = parseInt(prompt(`Ingresela velocidad registrada:`))
+    let informe = ""
+    if(velocidadRegristada > 0 && velocidadRegristada <= 10){
+        informe = `Conductor: ${nombreConductor}
+        \nVelocidad Registrada: ${velocidadRegristada}
+        \nRango de velocidad: lento`
+    }else if(velocidadRegristada > 10 && velocidadRegristada <= 30){
+        informe = `Conductor: ${nombreConductor}
+        \nVelocidad Registrada: ${velocidadRegristada}
+        \nRango de velocidad: moderada`
+    }else if(velocidadRegristada > 30 && velocidadRegristada <= 50){
+        informe = `Conductor: ${nombreConductor}
+        \nVelocidad Registrada: ${velocidadRegristada}
+        \nRango de velocidad: rapido`
+    }else if(velocidadRegristada > 50 && velocidadRegristada <= 120){
+        informe = `Conductor: ${nombreConductor}
+        \nVelocidad Registrada: ${velocidadRegristada}
+        \nRango de velocidad: muy rapido`
+    }else if(velocidadRegristada > 120){
+        informe = `Conductor: ${nombreConductor}
+        \nVelocidad Registrada: ${velocidadRegristada}
+        \nExcediste el limite de velocidad`
+    }else{
+        informe = `Conductor ${nombreConductor} ingrese una velocidad que sea valida`
+    }
+
+alert(informe)
+}
