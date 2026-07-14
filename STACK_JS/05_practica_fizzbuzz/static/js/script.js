@@ -1,0 +1,15 @@
+console.log(`conexión exitsa`)
+
+function contarHasta100(){
+    for (let i = 1; i <= 100; i++){
+        if( i % 3 === 0 && i % 5 === 0){
+            alert("FizzBuzz")
+        }else if(i % 5 === 0){
+            alert("Buzz")
+        }else if(i % 3 === 0){
+            alert("Fizz")
+        }else{
+            alert(i)
+        }
+    }
+}
