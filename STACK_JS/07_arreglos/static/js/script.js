@@ -63,3 +63,19 @@ function buscarMayoresEdad(){
         
     }
 }
+
+//-------------EJERCICIOS--------------------------------------------------------------------\\
+
+function mostrarEdades(){
+    let edades = [15,18,20,14,25];
+    alert(`Primer edad: ${edades[0]}
+        \nUltima edad: ${edades[4]}
+        \ncantidad de edades: ${edades.length}`)
+}
+
+function listaNombres(){
+    let listaNombres = ["Xavier", "Ariel", "Colque", "Estefano", "Alfredo"]
+    for(let i = 0; i < listaNombres.length; i++){
+        alert(listaNombres[i])
+    }
+}
