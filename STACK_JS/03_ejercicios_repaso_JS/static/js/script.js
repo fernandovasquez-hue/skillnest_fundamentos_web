@@ -82,7 +82,7 @@ let permiso = "";
                 \nA sido aceptada.`)
         }else{
             permiso = (`Profesor la solicitud de llevar ${cantidadLibros} libros
-                \nA sido rechazada ingrese una cantidad que sea valida.`)
+                \nA sido rechazada ingrese una cantidad que no se pase del limite.`)
         }
     }else if(usuario == "Estudiante"){
         if(cantidadLibros > 0 && cantidadLibros <= 10){
@@ -90,7 +90,7 @@ let permiso = "";
                 \nA sido aceptada.`)
         }else{
             permiso = (`Estudiante la solicitud de llevar ${cantidadLibros} libros
-                \nA sido rechazada ingrese una cantidad que sea valida.`)
+                \nA sido rechazada ingrese una cantidad que que no se pase del limite.`)
         }
     }else{
         permiso = (`Ingrese un usuario que sea valido.`)
