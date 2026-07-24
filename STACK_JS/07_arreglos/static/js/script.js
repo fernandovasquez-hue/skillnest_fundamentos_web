@@ -121,6 +121,7 @@ function calcularVentas() {
     let ventas = [5000, 8000, 12000, 3000, 10000, 9000, 4000];
     let total = 0;
     let mayor = ventas[0];
+        console.log("Venta eliminada:", ventas.pop());
     for(let i = 1; i <= 2; i++){
             ventas.push(parseInt(prompt(`Ingrese valor de la venta:`)));
     }
@@ -130,7 +131,11 @@ function calcularVentas() {
             mayor = ventas[i];
         }
     }
-    console.log("Total:", total);
+    if(total > 10000){
+        console.log("El total de ventas supero los diez mil y el total es:", total)
+    }else{
+        console.log("El total de ventas no supero los diez mil y el total es de:", total)
+    }
     console.log("Mayor:", mayor);
     console.log("Promedio:", total / ventas.length);
 }
