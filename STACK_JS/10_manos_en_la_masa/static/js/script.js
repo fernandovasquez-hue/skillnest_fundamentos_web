@@ -48,24 +48,24 @@ let pizzaBBQ = pizzaFactory(
 );
 alert(
     `Ingredientes de la primera pizza:
-    corteza: ${pizza.corteza}
+    \ncorteza: ${pizza.corteza}
     \nquesos: ${pizza.quesos}
     \nsalsa: ${pizza.salsa}
-    \ningredientes: ${pizza.ingredientes}`
-)
+    \ningredientes: ${pizza.ingredientes.join(", ")}`
+);
 alert(`Ingredientes de la segunda pizza:
-    corteza: ${pizzaLanzada.corteza}
+    \ncorteza: ${pizzaLanzada.corteza}
     \nquesos: ${pizzaLanzada.quesos}
     \nsalsa: ${pizzaLanzada.salsa}
-    \ningredientes: ${pizzaLanzada.ingredientes}`)
+    \ningredientes: ${pizzaLanzada.ingredientes.join(", ")}`);
 alert(`Ingredientes de la tercera pizza:
-    corteza: ${pizzaVeggie.corteza}
+    \ncorteza: ${pizzaVeggie.corteza}
     \nquesos: ${pizzaVeggie.quesos}
     \nsalsa: ${pizzaVeggie.salsa}
-    \ningredientes: ${pizzaVeggie.ingredientes}`)
+    \ningredientes: ${pizzaVeggie.ingredientes.join(", ")}`);
 alert(`Ingredientes de la Cuarta pizza:
-    corteza: ${pizzaBBQ.corteza}
+    \ncorteza: ${pizzaBBQ.corteza}
     \nquesos: ${pizzaBBQ.quesos}
     \nsalsa: ${pizzaBBQ.salsa}
-    \ningredientes: ${pizzaBBQ.ingredientes}`)
+    \ningredientes: ${pizzaBBQ.ingredientes.join(", ")}`);
 }
