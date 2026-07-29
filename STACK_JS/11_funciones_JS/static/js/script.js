@@ -34,9 +34,9 @@ Debe sumar a + b y elultimo resutado restarlo por c.
 Devolver el valor final y mostrar con un alert
 */
 let numeroA = parseInt(prompt(`Ingrese primer valor:`));
-let numeroB = parseInt(prompt(`Ingrese segundo valor:`))
-let numeroC = parseInt(prompt(`Ingrese tercer valor:`))
+let numeroB = parseInt(prompt(`Ingrese segundo valor:`));
+let numeroC = parseInt(prompt(`Ingrese tercer valor:`));
 function ecuacionMatematica(a, b, c){
 return a + b - c
 }
-
+alert(`El resultado de la ecuación es: ${ecuacionMatematica(numeroA, numeroB, numeroC)}`)
