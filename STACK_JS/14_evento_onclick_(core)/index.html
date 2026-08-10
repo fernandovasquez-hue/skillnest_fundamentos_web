@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Vásquez">
+    <title>Social Blog</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Social Blog</h1>
+        <div>
+            <input type="text" placeholder="Buscar publicaciones..." class="buscador_principal">
+        </div>
+        <button id="button_sesion">Iniciar sesión</button>
+    </header>
+
+    <main class="contenedor">
+        <section class="section_comentarios">
+            <div class="card">
+                <h2 class="titulo_comentario">Fundamentos de JavaScript</h2>
+                <p class="datos_comentario"><strong>Publicado por:</strong> Carlos Pérez</p>
+                <p class="datos_comentario"><strong>Fecha:</strong> 02/03/2025</p>
+                <p class="descripcion_comentario">
+                    JavaScript es un lenguaje de programación que se utiliza en el desarrollo web. Aprende los conceptos
+                    básicos para comenzar a programar.
+                </p>
+                <button id="boton_like">12 Me gusta</button>
+            </div>
+        
+            <div class="card">
+                <h2 class="titulo_comentario">Aprende a diseñar con CSS</h2>
+                <p class="datos_comentario"><strong>Publicado por:</strong> Ana Gómez</p>
+                <p class="datos_comentario"><strong>Fecha:</strong> 01/03/2025</p>
+                <p class="descripcion_comentario">
+                    El diseño web es una parte fundamental en el desarrollo de aplicaciones web. Conoce las propiedades
+                    de CSS para crear interfaces atractivas.
+                </p>
+                <button id="boton_like">30 Me gusta</button>
+            </div>
+        </section>
+    
+        <div class="tarjeta_bienvenida">
+            <div class="card caja_bienvenida">
+                <h2 class="titulo_bienvenida">¡Bienvenido!</h2>
+                <p class="parrafo_bienvenida">Explora nuevas publicaciones y conecta con otros usuarios.</p>
+                <button id="boton_bienvenida" onclick="mensaje()">Ver perfil</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="static/js/script.js"></script>
+</html>
