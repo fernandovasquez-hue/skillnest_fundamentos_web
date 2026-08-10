@@ -18,9 +18,9 @@ function mensaje() {
 }
 
 /*Botones para dar like */
-let botonesLike = document.querySelectorAll("#boton_like");
+let meGusta = document.querySelectorAll("#boton_like");
 
-botonesLike.forEach(function (boton) {
+meGusta.forEach(function (boton) {
     boton.addEventListener("click", function () {
         let contador = parseInt(this.innerText);
         contador++;
