@@ -22,8 +22,8 @@ let meGusta = document.querySelectorAll("#boton_like");
 
 meGusta.forEach(function (boton) {
     boton.addEventListener("click", function () {
-        let contador = parseInt(this.innerText);
-        contador++;
-        this.innerText = `${contador} Me gusta`;
+        let i = parseInt(this.innerText);
+        i++;
+        this.innerText = `${i} Me gusta`;
     });
 });
