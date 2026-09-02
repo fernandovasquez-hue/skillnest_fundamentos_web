@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra_inicio {
+    display: flex;
+    justify-content: center;
+    background-color: #444444;
+    color: #f8f3db;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+}
+.contenedor_perfil{
+    margin: 50px;
+    display: flex;
+    flex: 1;
+}
+.perfil {
+    border: 2px solid black;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+.perfil img {
+    max-width: 170px;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+.ver_perfil {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px 15px;
+    border-radius: 3px;
+    border: none;
+    background-color: #00a5b1;
+    color: #fff;
+}
+.contenedor_tarjetas{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    gap: 10px;
+    margin: 10px;
+}
+
+.publicaciones{
+    border: 2px solid black;
+    border-radius: 6px;
+    max-width: 800px;
+    background-color: #f3f3f3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.informacion_parte_arriba{
+    display: flex;
+}
+.nombre_perfil{
+    display: flex;
+    flex: 7;
+}
+.me_gusta{
+    display: flex;
+    flex: 2;
+    gap: 10px;
+}
+.boton_me_gusta{
+    background-color: #f1d32a;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 30px;
+}

@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#boton{
+    background-color: #069429;
+    color: #ffe4a4;
+    border: 2px solid #ffe4a4;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: bold;
+}
